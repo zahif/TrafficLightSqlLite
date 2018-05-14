@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hagarb.trafficlight.PersonalDeatailsActivity"
+    tools:showIn="@layout/activity_personal_deatails">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:text="Full Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="133dp"
+
+        android:layout_above="@+id/editTextName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="164dp"
+
+        android:layout_above="@+id/textViewAge"
+        android:layout_alignLeft="@+id/editTextAge"
+        android:layout_alignStart="@+id/editTextAge"
+        android:layout_marginBottom="48dp" />
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="221dp"
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="255dp"
+
+        android:layout_below="@+id/textViewAge"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewPersonalDeatails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Deatails"
+        android:textSize="25dp"
+        android:textColor="#810E0E"
+        tools:layout_editor_absoluteY="30dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="83dp"
+        android:layout_marginStart="83dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/buttonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="349dp"
+        android:layout_marginBottom="125dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

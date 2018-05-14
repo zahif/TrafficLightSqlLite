@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">TrafficLight</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_age">ageActivity</string>
+    <string name="ageTextView">Please enter your age:</string>
+    <string name="nameTextView">Please enter your Subjects ID:</string>
+
+
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps_location">Map</string>
+    <string name="title_activity_locate_activity">locate_activity</string>
+    <string name="title_activity_deatails">DeatailsActivity</string>
+    <string name="title_activity_personal_deatails">PersonalDeatailsActivity</string>
+    <string name="title_activity_map_only">Map</string>
+
+
+</resources>

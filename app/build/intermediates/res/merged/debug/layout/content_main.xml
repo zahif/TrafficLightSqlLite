@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_centerHorizontal="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hagarb.trafficlight.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <EditText
+        android:id="@+id/IDeditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FCAE31"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/IDtextView"
+        android:layout_centerInParent="true"
+    />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/nameTextView"
+        android:id="@+id/IDtextView"
+        android:textSize="20dp"
+        android:layout_marginTop="66dp"
+        android:layout_below="@+id/WelcometextView"
+        android:layout_centerInParent="true"
+       />
+
+    <Button
+        android:text="submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSubmit"
+        android:layout_below="@+id/IDeditText"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="66dp" />
+
+    <TextView
+        android:id="@+id/WelcometextView"
+        android:text="Welcome!"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="117dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

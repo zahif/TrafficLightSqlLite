@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\Users\\TOSHIBA\\AndroidStudioProjects\\TrafficLight - Sql Lite\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 45,
+                    "endOffset": 96
+                },
+                "from": {
+                    "file": "C:\\Users\\TOSHIBA\\.android\\build-cache\\5b037ee96010bf880a25ba383bcc8b56ddcfb7a8\\output\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 229,
+                        "endColumn": 45,
+                        "endOffset": 270
+                    }
+                }
+            }
+        ]
+    }
+]

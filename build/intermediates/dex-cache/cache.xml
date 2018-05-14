@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\libs\pubnub-gson-4.19.0-all.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fec298251f42d1f2bbefa519a4c51273eea47a34">
+        <dex dex="C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\build\intermediates\transforms\dex\debug\folders\1000\2\pubnub-gson-4.19.0-all_070c312e4cd83ddaa2f899131c9b303e83e803cb\classes.dex" />
+    </item>
+
+</items>

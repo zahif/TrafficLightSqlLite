@@ -1,0 +1,193 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:2:1-71:12
+	package
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:3:5-46
+		INJECTED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:20:5-67
+MERGED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\TOSHIBA\.android\build-cache\6f46377a9c9c770a04e599014dae6fe7c8be1291\output\AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:20:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:21:5-79
+MERGED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\TOSHIBA\.android\build-cache\6f46377a9c9c770a04e599014dae6fe7c8be1291\output\AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:21:22-76
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:22:5-98
+	android:name
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:22:22-95
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:23:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:24:22-76
+application
+ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:26:5-69:19
+MERGED from [com.android.support:design:26.1.0] C:\Users\TOSHIBA\.android\build-cache\10e94bf9da2ada7822c01eb860f7f7deeda987c4\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\TOSHIBA\.android\build-cache\29095974c9f2856c69da7e606cc4405f96332342\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\TOSHIBA\.android\build-cache\15f39b424786745f902206d70e0d31657e3f1261\output\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\TOSHIBA\.android\build-cache\751d51f4c2dd8e53ef6fad8903c91801342d10f5\output\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] C:\Users\TOSHIBA\.android\build-cache\446460310e376c3b3f4ff34cfb789cb45f4f0048\output\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\TOSHIBA\.android\build-cache\56452b673e76549c48a638f55b5aaf994545b37b\output\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\TOSHIBA\.android\build-cache\6f46377a9c9c770a04e599014dae6fe7c8be1291\output\AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-location:10.2.1] C:\Users\TOSHIBA\.android\build-cache\d58d9e96533bb3b99c62f529a402624373b5022b\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\TOSHIBA\.android\build-cache\cb381e478b9313db8c8b0d1d20046fba1359d8a7\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.1] C:\Users\TOSHIBA\.android\build-cache\eeb753db257716f7a741dfa887813608d74e84a4\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] C:\Users\TOSHIBA\.android\build-cache\b374fa0ae62c6898cc11e63594946d140f33bb18\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\TOSHIBA\.android\build-cache\76557c9e84863cb5fa831f2d208f7e95d0a56584\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\TOSHIBA\.android\build-cache\9c1594d628ebdb1510e8c5eac62cf2572d8721cc\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\TOSHIBA\.android\build-cache\dd2b4db2be0c003b3cb0e307216ad6a2fba486bb\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\TOSHIBA\.android\build-cache\a294c2b810e427ea1cf8ce26a14680c216c66400\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\TOSHIBA\.android\build-cache\6c61370dccedd5d8cf2abd0a8b65e9aa5d1a87e4\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\TOSHIBA\.android\build-cache\c1c86a637d83c8334a1a27412ca6ad34c4072ccf\output\AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\TOSHIBA\.android\build-cache\69de6cf0fc93dd89499f660bd19d603309b782bd\output\AndroidManifest.xml:24:5-28:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\TOSHIBA\.android\build-cache\3bd739341729607279a1a16f79408579b246bcd3\output\AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:29:9-37
+	android:supportsRtl
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:30:9-35
+	android:allowBackup
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:27:9-35
+	android:icon
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:28:9-43
+	android:theme
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:31:9-40
+activity#com.example.hagarb.trafficlight.MainActivity
+ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:32:9-41:20
+	android:label
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:34:13-45
+	android:theme
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:35:13-56
+	android:name
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:33:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:36:13-40:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:37:17-69
+	android:name
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:37:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:39:17-77
+	android:name
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:39:27-74
+activity#com.example.hagarb.trafficlight.ageActivity
+ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:42:9-45:59
+	android:label
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:44:13-55
+	android:theme
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:45:13-56
+	android:name
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:43:13-40
+meta-data#com.google.android.geo.API_KEY
+ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:54:9-56:71
+	android:value
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:56:13-68
+	android:name
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:55:13-58
+activity#com.example.hagarb.trafficlight.MapsActivity
+ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:58:9-60:59
+	android:label
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:60:13-56
+	android:name
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:59:13-41
+activity#com.example.hagarb.trafficlight.PersonalDeatailsActivity
+ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:62:9-65:59
+	android:label
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:64:13-69
+	android:theme
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:65:13-56
+	android:name
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:63:13-53
+activity#com.example.hagarb.trafficlight.MapOnlyActivity
+ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:66:9-68:72
+	android:label
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:68:13-60
+	android:name
+		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:67:13-44
+uses-sdk
+INJECTED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\TOSHIBA\.android\build-cache\b40c44e57b83a1b48612e50992d0d7108edb4a76\output\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:design:26.1.0] C:\Users\TOSHIBA\.android\build-cache\10e94bf9da2ada7822c01eb860f7f7deeda987c4\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\TOSHIBA\.android\build-cache\29095974c9f2856c69da7e606cc4405f96332342\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\TOSHIBA\.android\build-cache\15f39b424786745f902206d70e0d31657e3f1261\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\TOSHIBA\.android\build-cache\751d51f4c2dd8e53ef6fad8903c91801342d10f5\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] C:\Users\TOSHIBA\.android\build-cache\446460310e376c3b3f4ff34cfb789cb45f4f0048\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\TOSHIBA\.android\build-cache\56452b673e76549c48a638f55b5aaf994545b37b\output\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\TOSHIBA\.android\build-cache\6f46377a9c9c770a04e599014dae6fe7c8be1291\output\AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-location:10.2.1] C:\Users\TOSHIBA\.android\build-cache\d58d9e96533bb3b99c62f529a402624373b5022b\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\TOSHIBA\.android\build-cache\cb381e478b9313db8c8b0d1d20046fba1359d8a7\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.1] C:\Users\TOSHIBA\.android\build-cache\eeb753db257716f7a741dfa887813608d74e84a4\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] C:\Users\TOSHIBA\.android\build-cache\b374fa0ae62c6898cc11e63594946d140f33bb18\output\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\TOSHIBA\.android\build-cache\76557c9e84863cb5fa831f2d208f7e95d0a56584\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\TOSHIBA\.android\build-cache\9c1594d628ebdb1510e8c5eac62cf2572d8721cc\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\TOSHIBA\.android\build-cache\dd2b4db2be0c003b3cb0e307216ad6a2fba486bb\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\TOSHIBA\.android\build-cache\a294c2b810e427ea1cf8ce26a14680c216c66400\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\TOSHIBA\.android\build-cache\6c61370dccedd5d8cf2abd0a8b65e9aa5d1a87e4\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\TOSHIBA\.android\build-cache\c1c86a637d83c8334a1a27412ca6ad34c4072ccf\output\AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\TOSHIBA\.android\build-cache\69de6cf0fc93dd89499f660bd19d603309b782bd\output\AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\TOSHIBA\.android\build-cache\3bd739341729607279a1a16f79408579b246bcd3\output\AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.1.0] C:\Users\TOSHIBA\.android\build-cache\10e94bf9da2ada7822c01eb860f7f7deeda987c4\output\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.1.0] C:\Users\TOSHIBA\.android\build-cache\10e94bf9da2ada7822c01eb860f7f7deeda987c4\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\TOSHIBA\.android\build-cache\29095974c9f2856c69da7e606cc4405f96332342\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\TOSHIBA\.android\build-cache\15f39b424786745f902206d70e0d31657e3f1261\output\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\TOSHIBA\.android\build-cache\751d51f4c2dd8e53ef6fad8903c91801342d10f5\output\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] C:\Users\TOSHIBA\.android\build-cache\446460310e376c3b3f4ff34cfb789cb45f4f0048\output\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\TOSHIBA\.android\build-cache\56452b673e76549c48a638f55b5aaf994545b37b\output\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\TOSHIBA\.android\build-cache\76557c9e84863cb5fa831f2d208f7e95d0a56584\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\TOSHIBA\.android\build-cache\9c1594d628ebdb1510e8c5eac62cf2572d8721cc\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\TOSHIBA\.android\build-cache\dd2b4db2be0c003b3cb0e307216ad6a2fba486bb\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\TOSHIBA\.android\build-cache\a294c2b810e427ea1cf8ce26a14680c216c66400\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\TOSHIBA\.android\build-cache\6c61370dccedd5d8cf2abd0a8b65e9aa5d1a87e4\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\TOSHIBA\.android\build-cache\c1c86a637d83c8334a1a27412ca6ad34c4072ccf\output\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:design:26.1.0] C:\Users\TOSHIBA\.android\build-cache\10e94bf9da2ada7822c01eb860f7f7deeda987c4\output\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:design:26.1.0] C:\Users\TOSHIBA\.android\build-cache\10e94bf9da2ada7822c01eb860f7f7deeda987c4\output\AndroidManifest.xml:27:13-51
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\TOSHIBA\.android\build-cache\6f46377a9c9c770a04e599014dae6fe7c8be1291\output\AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\TOSHIBA\.android\build-cache\6f46377a9c9c770a04e599014dae6fe7c8be1291\output\AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:10.2.1] C:\Users\TOSHIBA\.android\build-cache\6f46377a9c9c770a04e599014dae6fe7c8be1291\output\AndroidManifest.xml:21:52-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\TOSHIBA\.android\build-cache\cb381e478b9313db8c8b0d1d20046fba1359d8a7\output\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\TOSHIBA\.android\build-cache\cb381e478b9313db8c8b0d1d20046fba1359d8a7\output\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\TOSHIBA\.android\build-cache\cb381e478b9313db8c8b0d1d20046fba1359d8a7\output\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\TOSHIBA\.android\build-cache\cb381e478b9313db8c8b0d1d20046fba1359d8a7\output\AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:10.2.1] C:\Users\TOSHIBA\.android\build-cache\b374fa0ae62c6898cc11e63594946d140f33bb18\output\AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:10.2.1] C:\Users\TOSHIBA\.android\build-cache\b374fa0ae62c6898cc11e63594946d140f33bb18\output\AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:10.2.1] C:\Users\TOSHIBA\.android\build-cache\b374fa0ae62c6898cc11e63594946d140f33bb18\output\AndroidManifest.xml:20:20-65
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\TOSHIBA\.android\build-cache\69de6cf0fc93dd89499f660bd19d603309b782bd\output\AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\TOSHIBA\.android\build-cache\69de6cf0fc93dd89499f660bd19d603309b782bd\output\AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\TOSHIBA\.android\build-cache\69de6cf0fc93dd89499f660bd19d603309b782bd\output\AndroidManifest.xml:26:13-58
