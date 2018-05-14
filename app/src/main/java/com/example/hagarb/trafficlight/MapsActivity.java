@@ -81,6 +81,7 @@ import android.location.Location;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback{
 //    private boolean gpsEnabled = false;
+    public static boolean Messageflag=false;
     private GoogleMap mMap;
 //    private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 10; // 10 meters
 
@@ -179,64 +180,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                // TextView textViewWelcome = (TextView) findViewById(R.id.textViewWelcome);
 
                 Context context = getApplicationContext();
-            //
                 JsonPrimitive contacts = message.getMessage().getAsJsonPrimitive();
                 String s= contacts.getAsString();
-                s= s.substring(3);
+                int statusIndex = s.indexOf("status");
+                if (s.charAt(statusIndex+1) == '0'){
 
-
-
-                //MainActivity.print(getApplicationContext(),s);
+                }
                 Log.d(s, s);
 
-               // textViewWelcome.setText(s);
-
-
-                //String s;
-                // Handle new message stored in message.message
-                // Message has been received on channel group stored in
-
-
-//                (message.getChannel() != null) {
-//                    TextView textViewWelcome = (TextView) findViewById(R.id.textViewWelcome);
-                        /*for(int i=0;i<100;i++){
-
-                        }*/
-//                    s = message.getMessage().toString();
-
-//                    s= s.substring(5,20);
-
-                    /// its a little bit problematic that try and catch are written that way.
-                    //   try {
-                    //        textViewWelcome.setText(". . . Loading . . . .");
-
-                    //     } catch (Exception hagar) {
-
-//                    textViewWelcome.setText(s);
-
-                    //      }
-
-                    //textView3.setText(s);
-                    // TextView textElement = (TextView) findViewById(R.id.textView3);
-                    //  textElement.setText("I love you"); //leave this line to assign a specific text
-
-//                } else {
-                    // Message has been receigved on channel stored in
-                    // message.getSubscription()
-//                }
-
-
-
-
-            /*
-
-
-
-                log the following items with your favorite logger
-                    - message.getMessage()
-                    - message.getSubscription()
-                    - message.getTimetoken()
-            */
             }
 
 
@@ -251,8 +202,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         pubnub.subscribe().channels(Arrays.asList("guy")).execute();
 
     }//onCreate
-
-
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
@@ -263,13 +212,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      * installed Google Play services and returned to the app.
      */
 
-
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        mMap = googleMap;
+        //Initialize all the activity and markers on the google map
 
-        //
-        //
+        mMap = googleMap;
         // Add a marker in Sydney and move the camera
         LatLng trafficLight1 = new LatLng(31.260955, 34.798259);
         mMap.addMarker(new MarkerOptions().position(trafficLight1).title("Rager_BenGurion_FaceOut"));
@@ -312,10 +259,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 mMap.moveCamera(CameraUpdateFactory.newLatLng(myLocation));
                 //Tzahi try
                 double dist1 = distance(loc.getLatitude(),loc.getLongitude(),32.076551,34.776788);
-                if (dist1<1500) {
+                if (dist1<800) {
+                    if (!Messageflag)
                     Toast.makeText(
                             getBaseContext(),
                             "you are need to stop", Toast.LENGTH_SHORT).show();
+                    SetMessageFlag(false);
+                }
+                if (dist1>800){
+                    SetMessageFlag(true);
                 }
                 //end of try
             }
@@ -399,7 +351,9 @@ catch(InterruptedException ex){
 
     }//onMapReady
 
-
+    private static void SetMessageFlag(Boolean flag){
+        Messageflag= flag;
+    }
 
     ///Hagar - distance
     private double distance(double lat1, double lon1, double lat2, double lon2) {
