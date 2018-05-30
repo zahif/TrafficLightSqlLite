@@ -3,6 +3,15 @@
 
     <item
         is-multidex="true"
+        jar="C:\Users\TOSHIBA\.android\build-cache\2482399cffe55d7c44a81bd2caa252f28b174d6f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e41a052c714bf67f743c22ed74153422ad773f88">
+        <dex dex="C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6f236c83cffb9a15ae58b2a28ad8b88a135d2127\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\libs\pubnub-gson-4.19.0-all.jar"
         jumboMode="false"
         optimize="true"

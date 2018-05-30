@@ -21,6 +21,8 @@ android {
         }
     }
 }
+
+
 dependencies {
     android.defaultConfig.javaCompileOptions.annotationProcessorOptions.includeCompileClasspath = true
     compile fileTree(include: ['*.jar'], dir: 'libs')
@@ -47,6 +49,9 @@ dependencies {
     compile "com.google.android.gms:play-services-location:10.2.1"
 
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.google.maps.android:android-maps-utils:0.5+'
+
+
     testCompile 'junit:junit:4.12'
 }
 

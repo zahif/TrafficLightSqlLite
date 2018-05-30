@@ -12,6 +12,10 @@
         "source": "C:\\Users\\TOSHIBA\\.android\\build-cache\\10e94bf9da2ada7822c01eb860f7f7deeda987c4\\output\\res\\layout\\design_navigation_item_header.xml"
     },
     {
+        "merged": "C:\\Users\\TOSHIBA\\AndroidStudioProjects\\TrafficLight - Sql Lite\\app\\build\\intermediates\\res\\merged\\debug\\layout\\amu_webview.xml",
+        "source": "C:\\Users\\TOSHIBA\\.android\\build-cache\\2482399cffe55d7c44a81bd2caa252f28b174d6f\\output\\res\\layout\\amu_webview.xml"
+    },
+    {
         "merged": "C:\\Users\\TOSHIBA\\AndroidStudioProjects\\TrafficLight - Sql Lite\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
         "source": "C:\\Users\\TOSHIBA\\.android\\build-cache\\29095974c9f2856c69da7e606cc4405f96332342\\output\\res\\layout\\select_dialog_multichoice_material.xml"
     },
@@ -124,6 +128,10 @@
         "source": "C:\\Users\\TOSHIBA\\.android\\build-cache\\29095974c9f2856c69da7e606cc4405f96332342\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
+        "merged": "C:\\Users\\TOSHIBA\\AndroidStudioProjects\\TrafficLight - Sql Lite\\app\\build\\intermediates\\res\\merged\\debug\\layout\\amu_info_window.xml",
+        "source": "C:\\Users\\TOSHIBA\\.android\\build-cache\\2482399cffe55d7c44a81bd2caa252f28b174d6f\\output\\res\\layout\\amu_info_window.xml"
+    },
+    {
         "merged": "C:\\Users\\TOSHIBA\\AndroidStudioProjects\\TrafficLight - Sql Lite\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
         "source": "C:\\Users\\TOSHIBA\\.android\\build-cache\\29095974c9f2856c69da7e606cc4405f96332342\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
@@ -190,6 +198,10 @@
     {
         "merged": "C:\\Users\\TOSHIBA\\AndroidStudioProjects\\TrafficLight - Sql Lite\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
         "source": "C:\\Users\\TOSHIBA\\.android\\build-cache\\29095974c9f2856c69da7e606cc4405f96332342\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\TOSHIBA\\AndroidStudioProjects\\TrafficLight - Sql Lite\\app\\build\\intermediates\\res\\merged\\debug\\layout\\amu_text_bubble.xml",
+        "source": "C:\\Users\\TOSHIBA\\.android\\build-cache\\2482399cffe55d7c44a81bd2caa252f28b174d6f\\output\\res\\layout\\amu_text_bubble.xml"
     },
     {
         "merged": "C:\\Users\\TOSHIBA\\AndroidStudioProjects\\TrafficLight - Sql Lite\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_personal_deatails.xml",

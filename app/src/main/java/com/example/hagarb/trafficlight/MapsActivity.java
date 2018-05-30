@@ -1,6 +1,8 @@
 package com.example.hagarb.trafficlight;
 
 import android.Manifest;
+import com.google.maps.android.*;
+import com.google.maps.android.SphericalUtil;
 import android.content.ContextWrapper;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -19,6 +21,10 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.location.LocationSettingsRequest;
+import com.google.android.gms.location.LocationSettingsResult;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -26,13 +32,15 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+
 import android.widget.Button;
 
-import  org.json.JSONArray;
+import org.json.JSONArray;
 ///////////
 import android.location.Location;
 import android.util.Log;
 import android.widget.Toast;
+
 import com.google.gson.JsonArray;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -79,25 +87,20 @@ import android.content.Context;
 import android.location.Location;
 //import com.google.android.gms.location.LocationResul
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback{
-//    private boolean gpsEnabled = false;
-    public static boolean Messageflag=false;
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+    //    private boolean gpsEnabled = false;
+    public static boolean Messageflag = false;
     private GoogleMap mMap;
-//    private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 10; // 10 meters
 
-
+    //    private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 10; // 10 meters
     // The minimum time between updates in milliseconds
 //    private static final long MIN_TIME_BW_UPDATES = 1000; // 1 second
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         LocationManager lm = (LocationManager)
                 this.getSystemService(LOCATION_SERVICE);
 //        gpsEnabled = lm
 //                .isProviderEnabled(LocationManager.GPS_PROVIDER);
-
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
@@ -105,25 +108,18 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-
-
         Button button = (Button) findViewById(R.id.buttonExit);
-
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(MapsActivity.this, ageActivity.class);
                 startActivity(intent);
             }
         });
-
         PNConfiguration pnConfiguration = new PNConfiguration();
         pnConfiguration.setSubscribeKey("sub-c-57f7dbae-c9e6-11e7-8a2d-cad296c360f6");
         pnConfiguration.setPublishKey("pub-c-e31073c6-6513-4b2a-8d0b-99535bc49aff");
-        //pnConfiguration.setSecretKey("sec-c-ZmQyOTM2ZGEtYmVlNy00ZmI4LWFmYjItODAzYzAzOWIwYjA3");
         pnConfiguration.setSecure(true);
-
         PubNub pubnub = new PubNub(pnConfiguration);
-
         pubnub.addListener(new SubscribeCallback() {
             @Override
             public void status(PubNub pubnub, PNStatus status) {
@@ -177,20 +173,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             @Override
             public void message(PubNub pubnub, PNMessageResult message) {
-               // TextView textViewWelcome = (TextView) findViewById(R.id.textViewWelcome);
+                // TextView textViewWelcome = (TextView) findViewById(R.id.textViewWelcome);
 
                 Context context = getApplicationContext();
                 JsonPrimitive contacts = message.getMessage().getAsJsonPrimitive();
-                String s= contacts.getAsString();
-                int statusIndex = s.indexOf("status");
-                if (s.charAt(statusIndex+1) == '0'){
+                String s = contacts.getAsString();
+                int statusIndex = s.indexOf("conditions");
+                int TlcCodeIndex = s.indexOf("id");
+//                TrafficLightStatus tlc =new TrafficLightStatus( s.charAt(statusIndex+5)=='0' ? true:false,s.charAt(TlcCodeIndex+2));
+                if (s.charAt(statusIndex + 1) == '0') {
 
                 }
                 Log.d(s, s);
-
             }
-
-
 
             @Override
             public void presence(PubNub pubnub, PNPresenceEventResult presence) {
@@ -199,9 +194,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         });
 
-        pubnub.subscribe().channels(Arrays.asList("guy")).execute();
+        pubnub.subscribe().channels(Arrays.asList("Tzahi")).execute();
 
     }//onCreate
+
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
@@ -245,8 +241,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(trafficLight6).title("Tel Aviv"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(trafficLight6));
 
-        LocationManager lm = (LocationManager)
-                this.getSystemService(LOCATION_SERVICE);
+        final LatLng trafficLight7 = new LatLng(31.258666, 34.797663);
+        mMap.addMarker(new MarkerOptions().position(trafficLight7).title("Metzada"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(trafficLight7));
+
+//        LocationRequest locationReq = new LocationRequest();
+//        locationReq.setInterval(10000);
+//        locationReq.setFastestInterval(5000);
+//        locationReq.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+//        LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder().addLocationRequest(locationReq);
+
+
         LocationListener ll=new LocationListener() {
             @Override
             public void onLocationChanged(Location loc) {
@@ -255,19 +260,38 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         "Location changed: Lat: " + loc.getLatitude() + " Lng: "
                                 + loc.getLongitude(), Toast.LENGTH_SHORT).show();
                 LatLng myLocation = new LatLng( loc.getLatitude(),loc.getLongitude());
-                mMap.addMarker(new MarkerOptions().position(myLocation).title("MyLocation"));
+//                mMap.addMarker(new MarkerOptions().position(myLocation).title("MyLocation"));
                 mMap.moveCamera(CameraUpdateFactory.newLatLng(myLocation));
                 //Tzahi try
-                double dist1 = distance(loc.getLatitude(),loc.getLongitude(),32.076551,34.776788);
+                double dist1 = distance(loc.getLatitude(),loc.getLongitude(),31.258666,34.797663);
+
+                LatLng from = new LatLng(loc.getLatitude(),loc.getLongitude());
+                LatLng to = new LatLng(31.258666,34.797663);
+
+                //Calculating the distance in meters
+                Double distance = SphericalUtil.computeDistanceBetween(from, to);
+
+                //Displaying the distance
+                Toast.makeText(getBaseContext(),String.valueOf(distance+" Meters"),Toast.LENGTH_SHORT).show();
+
+                TextView textViewVelocity = (TextView) findViewById(R.id.textViewVelocity);
+                textViewVelocity.setText((int) (loc.getSpeed()) + " km/h"); // is it in km/h?
+                TextView textViewDistance = (TextView) findViewById(R.id.textViewDistance);
+                double dist =distance(loc.getLatitude(),loc.getLongitude(),trafficLight7.latitude,trafficLight7.longitude);
+                textViewDistance.setText((int)dist +" m ");  // is it in m?
+
                 if (dist1<800) {
                     if (!Messageflag)
                     Toast.makeText(
                             getBaseContext(),
                             "you are need to stop", Toast.LENGTH_SHORT).show();
-                    SetMessageFlag(false);
+                        Toast.makeText(
+                                getBaseContext(),
+                                "Not", Toast.LENGTH_SHORT).show();
+                    SetMessageFlag(true);
                 }
                 if (dist1>800){
-                    SetMessageFlag(true);
+                    SetMessageFlag(false);
                 }
                 //end of try
             }
@@ -299,10 +323,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             // for ActivityCompat#requestPermissions for more details.
             return;
         }
-        lm.requestLocationUpdates(LocationManager.GPS_PROVIDER,1000,1,ll);
+
+        LocationManager lm = (LocationManager)
+                this.getSystemService(LOCATION_SERVICE);
+        lm.requestLocationUpdates(LocationManager.GPS_PROVIDER,500,10,ll);
         try {
-            Location l =
-                    lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+            Location l = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
             l.getLatitude();
             l.getLongitude();
 
@@ -318,17 +344,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mMap. moveCamera(CameraUpdateFactory
                     .newCameraPosition(BONDI));
 
-            //mMap.addMarker(new MarkerOptions().position(myLocation).title("MyLocationNOW!"));
+            //mMap.addMarker(new MarkerOptionsd().position(myLocation).title("MyLocationNOW!"));
             mMap.moveCamera(CameraUpdateFactory.newLatLng(myLocation));
             mMap.setMyLocationEnabled(true);
-
-            TextView textViewVelocity = (TextView) findViewById(R.id.textViewVelocity);
-            textViewVelocity.setText((int) l.getSpeed() + " km/h"); // is it in km/h?
-            TextView textViewDistance = (TextView) findViewById(R.id.textViewDistance);
-            double dist =distance(l.getLatitude(),l.getLongitude(),trafficLight2.latitude,trafficLight2.longitude);
-            textViewDistance.setText((int)dist +" m ");  // is it in m?
-
-
         }
         catch( Exception gps)
         {}
@@ -379,34 +397,34 @@ catch(InterruptedException ex){
         return (rad * 180.0 / Math.PI);
     }
     ///Hagar - distance
-    private class MyLocationListener implements LocationListener {
-        // ContextWrapper wrapper = new ContextWrapper(context);
-
-        public void onLocationChanged(Location loc) {
-            //pb.setVisibility(View.INVISIBLE);
-            Toast.makeText(
-                    getBaseContext(),
-                    "Location changed: Lat: " + loc.getLatitude() + " Lng: "
-                            + loc.getLongitude(), Toast.LENGTH_SHORT).show();
-            // String longitude = "Longitude: " + loc.getLongitude();
-            // Log.v(TAG, longitude);
-            // String latitude = "Latitude: " + loc.getLatitude();
-            // Log.v(TAG, latitude);
-
-            //  String s = longitude + "-" + latitude ;
-            //  return s;LatLng trafficLight4 = new LatLng(31.275169, 34.795927);
-            LatLng myLocation = new LatLng( loc.getLatitude(),loc.getLongitude());
-            mMap.addMarker(new MarkerOptions().position(myLocation).title("MyLocation"));
-            mMap.moveCamera(CameraUpdateFactory.newLatLng(myLocation));
-            //Tzahi try
-            double dist1 = distance(loc.getLatitude(),loc.getLongitude(),32.076551,34.776788);
-            if (dist1<1500) {
-                Toast.makeText(
-                        getBaseContext(),
-                        "you are need to stop", Toast.LENGTH_SHORT).show();
-            }
-            //end of try
-        }
+//    private class MyLocationListener implements LocationListener {
+//        // ContextWrapper wrapper = new ContextWrapper(context);
+//
+//        public void onLocationChanged(Location loc) {
+//            //pb.setVisibility(View.INVISIBLE);
+//            Toast.makeText(
+//                    getBaseContext(),
+//                    "Location changed: Lat: " + loc.getLatitude() + " Lng: "
+//                            + loc.getLongitude(), Toast.LENGTH_SHORT).show();
+//            // String longitude = "Longitude: " + loc.getLongitude();
+//            // Log.v(TAG, longitude);
+//            // String latitude = "Latitude: " + loc.getLatitude();
+//            // Log.v(TAG, latitude);
+//
+//            //  String s = longitude + "-" + latitude ;
+//            //  return s;LatLng trafficLight4 = new LatLng(31.275169, 34.795927);
+//            LatLng myLocation = new LatLng( loc.getLatitude(),loc.getLongitude());
+////            mMap.addMarker(new MarkerOptions().position(myLocation).title("MyLocation"));
+//            mMap.moveCamera(CameraUpdateFactory.newLatLng(myLocation));
+//            //Tzahi try
+//            double dist1 = distance(loc.getLatitude(),loc.getLongitude(),31.258666,34.797663);
+//            if (dist1<1500) {
+//                Toast.makeText(
+//                        getBaseContext(),
+//                        "you are need to stop", Toast.LENGTH_SHORT).show();
+//            }
+//            //end of try
+//        }
 
 
         private void algorithm (int path ) {
@@ -443,16 +461,16 @@ catch(InterruptedException ex){
         }
 
 
-
-        @Override
-        public void onProviderDisabled(String provider) {}
-
-        @Override
-        public void onProviderEnabled(String provider) {}
-
-        @Override
-        public void onStatusChanged(String provider, int status, Bundle extras) {}
-    }
+//
+//        @Override
+//        public void onProviderDisabled(String provider) {}
+//
+//        @Override
+//        public void onProviderEnabled(String provider) {}
+//
+//        @Override
+//        public void onStatusChanged(String provider, int status, Bundle extras) {}
+//    }
 
 }//distance
 

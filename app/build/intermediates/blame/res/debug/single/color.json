@@ -4,12 +4,12 @@
         "source": "C:\\Users\\TOSHIBA\\.android\\build-cache\\29095974c9f2856c69da7e606cc4405f96332342\\output\\res\\color\\abc_btn_colored_text_material.xml"
     },
     {
-        "merged": "C:\\Users\\TOSHIBA\\AndroidStudioProjects\\TrafficLight - Sql Lite\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_btn_checkable.xml",
-        "source": "C:\\Users\\TOSHIBA\\.android\\build-cache\\29095974c9f2856c69da7e606cc4405f96332342\\output\\res\\color\\abc_tint_btn_checkable.xml"
-    },
-    {
         "merged": "C:\\Users\\TOSHIBA\\AndroidStudioProjects\\TrafficLight - Sql Lite\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
         "source": "C:\\Users\\TOSHIBA\\.android\\build-cache\\29095974c9f2856c69da7e606cc4405f96332342\\output\\res\\color\\abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\TOSHIBA\\AndroidStudioProjects\\TrafficLight - Sql Lite\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_btn_checkable.xml",
+        "source": "C:\\Users\\TOSHIBA\\.android\\build-cache\\29095974c9f2856c69da7e606cc4405f96332342\\output\\res\\color\\abc_tint_btn_checkable.xml"
     },
     {
         "merged": "C:\\Users\\TOSHIBA\\AndroidStudioProjects\\TrafficLight - Sql Lite\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_tint.xml",

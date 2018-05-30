@@ -56,6 +56,7 @@ MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\TOSHIBA\.an
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\TOSHIBA\.android\build-cache\c1c86a637d83c8334a1a27412ca6ad34c4072ccf\output\AndroidManifest.xml:25:5-29:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\TOSHIBA\.android\build-cache\69de6cf0fc93dd89499f660bd19d603309b782bd\output\AndroidManifest.xml:24:5-28:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\TOSHIBA\.android\build-cache\3bd739341729607279a1a16f79408579b246bcd3\output\AndroidManifest.xml:9:5-20
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\TOSHIBA\.android\build-cache\2482399cffe55d7c44a81bd2caa252f28b174d6f\output\AndroidManifest.xml:7:5-11:19
 	android:label
 		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:29:9-37
 	android:supportsRtl
@@ -120,6 +121,7 @@ ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\sr
 		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:67:13-44
 uses-sdk
 INJECTED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\TOSHIBA\.android\build-cache\b40c44e57b83a1b48612e50992d0d7108edb4a76\output\AndroidManifest.xml:18:5-42
 MERGED from [com.android.support:design:26.1.0] C:\Users\TOSHIBA\.android\build-cache\10e94bf9da2ada7822c01eb860f7f7deeda987c4\output\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\TOSHIBA\.android\build-cache\29095974c9f2856c69da7e606cc4405f96332342\output\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\TOSHIBA\.android\build-cache\15f39b424786745f902206d70e0d31657e3f1261\output\AndroidManifest.xml:20:5-44
@@ -139,6 +141,7 @@ MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\TOSHIBA\.an
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\TOSHIBA\.android\build-cache\c1c86a637d83c8334a1a27412ca6ad34c4072ccf\output\AndroidManifest.xml:21:5-23:58
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\TOSHIBA\.android\build-cache\69de6cf0fc93dd89499f660bd19d603309b782bd\output\AndroidManifest.xml:20:5-22:41
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\TOSHIBA\.android\build-cache\3bd739341729607279a1a16f79408579b246bcd3\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\TOSHIBA\.android\build-cache\2482399cffe55d7c44a81bd2caa252f28b174d6f\output\AndroidManifest.xml:5:5-43
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:26.1.0] C:\Users\TOSHIBA\.android\build-cache\10e94bf9da2ada7822c01eb860f7f7deeda987c4\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
@@ -180,6 +183,7 @@ ADDED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\TOSHIBA\.
 		ADDED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\TOSHIBA\.android\build-cache\cb381e478b9313db8c8b0d1d20046fba1359d8a7\output\AndroidManifest.xml:19:19-85
 meta-data#com.google.android.gms.version
 ADDED from [com.google.android.gms:play-services-basement:10.2.1] C:\Users\TOSHIBA\.android\build-cache\b374fa0ae62c6898cc11e63594946d140f33bb18\output\AndroidManifest.xml:20:9-121
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\TOSHIBA\.android\build-cache\2482399cffe55d7c44a81bd2caa252f28b174d6f\output\AndroidManifest.xml:8:9-10:69
 	android:value
 		ADDED from [com.google.android.gms:play-services-basement:10.2.1] C:\Users\TOSHIBA\.android\build-cache\b374fa0ae62c6898cc11e63594946d140f33bb18\output\AndroidManifest.xml:20:66-119
 	android:name

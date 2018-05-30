@@ -12,6 +12,10 @@
         "source": "C:\\Users\\TOSHIBA\\.android\\build-cache\\cb381e478b9313db8c8b0d1d20046fba1359d8a7\\output\\res\\drawable-xxhdpi-v4\\googleg_standard_color_18.png"
     },
     {
+        "merged": "C:\\Users\\TOSHIBA\\AndroidStudioProjects\\TrafficLight - Sql Lite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\amu_bubble_mask.9.png",
+        "source": "C:\\Users\\TOSHIBA\\.android\\build-cache\\2482399cffe55d7c44a81bd2caa252f28b174d6f\\output\\res\\drawable-xxhdpi-v4\\amu_bubble_mask.9.png"
+    },
+    {
         "merged": "C:\\Users\\TOSHIBA\\AndroidStudioProjects\\TrafficLight - Sql Lite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
         "source": "C:\\Users\\TOSHIBA\\.android\\build-cache\\29095974c9f2856c69da7e606cc4405f96332342\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
@@ -118,6 +122,10 @@
     {
         "merged": "C:\\Users\\TOSHIBA\\AndroidStudioProjects\\TrafficLight - Sql Lite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png",
         "source": "C:\\Users\\TOSHIBA\\.android\\build-cache\\29095974c9f2856c69da7e606cc4405f96332342\\output\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "C:\\Users\\TOSHIBA\\AndroidStudioProjects\\TrafficLight - Sql Lite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\amu_bubble_shadow.9.png",
+        "source": "C:\\Users\\TOSHIBA\\.android\\build-cache\\2482399cffe55d7c44a81bd2caa252f28b174d6f\\output\\res\\drawable-xxhdpi-v4\\amu_bubble_shadow.9.png"
     },
     {
         "merged": "C:\\Users\\TOSHIBA\\AndroidStudioProjects\\TrafficLight - Sql Lite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
