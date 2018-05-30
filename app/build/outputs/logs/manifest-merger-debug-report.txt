@@ -121,7 +121,6 @@ ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\sr
 		ADDED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml:67:13-44
 uses-sdk
 INJECTED from C:\Users\TOSHIBA\AndroidStudioProjects\TrafficLight - Sql Lite\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:multidex:1.0.1] C:\Users\TOSHIBA\.android\build-cache\b40c44e57b83a1b48612e50992d0d7108edb4a76\output\AndroidManifest.xml:18:5-42
 MERGED from [com.android.support:design:26.1.0] C:\Users\TOSHIBA\.android\build-cache\10e94bf9da2ada7822c01eb860f7f7deeda987c4\output\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\TOSHIBA\.android\build-cache\29095974c9f2856c69da7e606cc4405f96332342\output\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\TOSHIBA\.android\build-cache\15f39b424786745f902206d70e0d31657e3f1261\output\AndroidManifest.xml:20:5-44
